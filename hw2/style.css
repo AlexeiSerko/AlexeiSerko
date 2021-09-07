@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Indie+Flower&family=Lobster&display=swap');
+body {
+  font-size: 16px;
+  font-family: 'Lobster', cursive;;
+}
+header{
+  width: 100;
+  background-color:rgb(44, 42,42) ;
+  color: #fff;
+  padding: 15px;
+}
+header a {
+  color: aqua;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.info {
+  display: flex;
+}
+.menu ul {
+  list-style: none;/* убираем точки*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+.menu ul li a {
+  text-decoration: none;
+}
