@@ -5,21 +5,35 @@ body {
 }
 header{
   width: 100;
-  background-color:rgb(44, 42,42) ;
+  background-color:rgb(44, 42, 42) ;
   color: #fff;
   padding: 15px;
 }
+header.top {
+  padding: 15px;
+  background-color:rgb(44, 42, 42) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 header a {
   color: aqua;
+}
+header a:hover {
+  color: crimson;
+  transform: scale(1);
+
 }
 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color:rgb(65, 47, 47) ;
 }
 header.info {
-  display: flex;
+  display: block;
 }
+
 .menu ul {
   list-style: none;/* убираем точки*/
   display: flex;
@@ -27,9 +41,21 @@ header.info {
   margin: 0;
   padding: 0;
 }
+.menu ul li {
+  margin-left: 15px;
+  
+}
 .menu ul li:first-child {
   margin-left: 0px;
+
 }
 .menu ul li a {
   text-decoration: none;
+  color: aqua;
+  display: block;
+  transition: 0/3s ease-in all ;
+}
+.menu ul li a:hover {
+  color:crimson ;
+  transform: scale(1.1);
 }
