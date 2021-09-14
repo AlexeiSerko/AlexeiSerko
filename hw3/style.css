@@ -24,6 +24,7 @@ header.info {
   display: block;
 }
 
+
 .info_phone a {
   color: crimson;
   text-decoration: none;
@@ -62,6 +63,7 @@ footer {
   color: #fff;
   background-color: rgb(44, 42, 42);
 }
+
 .menu_footer ul {
   list-style: none;
   display: flex;
@@ -86,11 +88,13 @@ footer {
   color: #fff;
   transform: scale(1.1);
 }
+
 .footer_img {
   display: flex;
   justify-content: flex-end;
   margin-right: 15px;
 }
+
 .phone_footer a {
   color: crimson;
   display: flex;
@@ -99,6 +103,7 @@ footer {
   text-decoration: none;
 }
 
+/*
 .info_apple {
   margin: 15px;
   border: 1px solid grey;
@@ -127,12 +132,127 @@ footer {
 .info_apple ul {
   list-style: none;
 }
+*/
+/* main */
 .main {
   display: flex;
 }
-.main_left {
+
+.main__left {
   width: 30%;
+  padding: 15px;
 }
-.main_rigth {
-  width: 70;
+
+.main__right {
+  width: 70%;
+  padding: 15px;
+}
+
+/* sidebar */
+.sidebar {
+  border: 1px solid black;
+}
+
+.sidebar__list {
+  list-style: none;
+}
+
+.sidebar__list li {
+  padding: 5px 15px;
+}
+
+/* info */
+.info {
+  margin-top: 30px;
+  display: flex;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.info.active {
+  background-color: black;
+  color: #fff;
+}
+
+.info__icon {
+  width: 20%;
+}
+
+.info__text {
+  width: 80%;
+}
+
+.info__text-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.info__text-description {
+  font-weight: 400;
+}
+
+.slider {
+  border: 1px solid grey;
+  min-height: 200px;
+}
+
+.main__rigth-title {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 2px solid grey;
+  padding: 15px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+
+
+.card__img {
+  width: 160px;
+  height: 160px;
+  background-color: rgb(255, 69, 69);
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.card__prise {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.card__bth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.card__btn div:nth-child(1) {
+  background-color: black;
+  color: #fff;
+
+}
+
+.card__btn div:nth-child(2) {
+  background-color: grey;
 }
