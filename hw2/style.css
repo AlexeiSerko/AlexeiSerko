@@ -125,3 +125,12 @@ footer {
 .info_apple ul {
   list-style: none;
 }
+.main {
+  display: flex;
+}
+.main_left {
+  width: 30%;
+}
+.main_rigth {
+  width: 70%;
+}
