@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Айфоносервис| Техника Apple</title>
     <meta name="description" content="Интернет магазин техники Apple">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <!--<div class="header"></div>-->
-        <div class="top">
+        <div class="header__top">
             <div>
                 <span>Айфоносервис | Техника Apple</span>
                 <!--<img src="" alt=""-->
@@ -22,12 +22,12 @@
             <div>
                 <input type="text" name="term" placeholder="Поиск по сайту">
             </div>
-            <div class="info">
-                <div class="info_acaunt">
+            <div class="header__info">
+                <div class="info__acaunt">
                     <span>Мой аккаунт</span>
                 </div>
                 <!--info_acaunt-->
-                <div class="info_phone">
+                <div class="info__phone">
                     <a href="tel:+7490999999">+7(490) 99-99-99</a>
                 </div>
                 <!--info-phone-->
@@ -35,40 +35,278 @@
             <!--info-->
         </div>
 
+        <div class="wrapper">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Ремонт</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Ремонт</a></li>
-                <li><a href="#">Скидки</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <aside>
-            <div class="info_apple">
-                <div class="iphone_6s">
-                    <h3>Aplle iphone 6s</h3>
+
+    <main class="main wrapper">
+        <div class="main__left">
+            <aside class="sidebar">
+                <ul class="sidebar__list">
+                    <li> Apple iphone s6</li>
+                    <li><a href="#">-16 Gb</a></li>
+                    <li><a href="#">128 Gb</a></li>
+                    <li><a href="#">Apple phone 6s Plus</a></li>
+                    <li><a href="#">Apple iphone 6</a></li>
+                    <li><a href="#">Apple iphone 6 Plus</a></li>
+                    <li><a href="#">Apple iphone 5s</a></li>
+                    <li><a href="#">Apple Watch</a></li>
+                    <li><a href="#">Скидки</a></li>
+
+                </ul>
+            </aside>
+
+            <div class="info active">
+                <div class="info__icon">
+                    &#127777
+                </div>
+                <div class="info__text">
+                    <div class="info__text-title">
+                        Гарантия качества
+                    </div>
+                    <div class="info__text-description">
+                        Возможность полной проверки товара до оплаты.
+                        Гарантия 1 год. Обслуживание в официальном сервис центре Apple.
+                    </div>
+                </div>
+            </div>
+            <div class="info ">
+                <div class="info__icon">
+                    &#127772
+                </div>
+                <div class="info__text">
+                    <div class="info__text-title">
+                        Привлекательные цены
+                    </div>
+                    <div class="info__text-description">
+                        Не смотря на все наши преимущества наши цены остаются низкими.
+                    </div>
+                </div>
+            </div>
+            <div class="info ">
+                <div class="info__icon">
+                    &#127771
+                </div>
+                <div class="info__text">
+                    <div class="info__text-title">
+                        Гарантия доставки
+                    </div>
+                    <div class="info__text-description">
+                        Мы бережно упаковываем и отправляем вам товар, контруллируя
+                        доставку каждого продукта индивидуально.
+                    </div>
+                </div>
+            </div>
+            <div class="info ">
+                <div class="info__icon">
+                    &#127770
+                </div>
+                <div class="info__text">
+                    <div class="info__text-title">
+                        Гарантия качества
+                    </div>
+                    <div class="info__text-description">
+                        Возможность полной проверки товара до оплаты.
+                        Гарантия 1 год. Обслуживание в официальном сервис центре Apple.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__right">
+            <div class="slider">slider</div>
+
+            <h2 class="main__right-title">
+                Лучшие товары
+            </h2>
+
+            <section class="card-list">
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
                 </div>
 
-                <ul>
-                    <li><a href="#">-16 Gb</a></li><br>
-                    <li><a href="#">-64 Gb</a></li><br>
-                    <li><a href="#">-128 Gb</a></li><br>
-                    <li><a href="#">Apple phone 6s Plus</a></li><br>
-                    <li><a href="#">Apple iphone 6</a></li><br>
-                    <li><a href="#">Apple iphone 6 Plus</a></li><br>
-                    <li><a href="#">Apple iphone 5s</a></li><br>
-                    <li><a href="#">Apple Watch</a></li><br>
-                    <li><a href="#">Скидки</a></li>
-                </ul>
-            </div>
-        </aside>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        iPhone 6s 128Gb Gold
+                    </div>
+                    <div class="card__prise">
+                        64990 руб.
+                    </div>
+                    <div class="card__btn">
+                        <div>
+                            <span>Добавить в корзину</span>
+                        </div>
+                        <div>
+                            <span>Купить в 1 клик</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
     </main>
     <footer>
-        <nav class="menu_footer">
+        <nav class="menu__footer">
             <ul>
                 <li>Айфоносервис|Техника Apple</li>
                 <li><a href="#">Гарантия</a></li>
@@ -76,17 +314,25 @@
                 <li><a href="#">Ремонт</a></li>
                 <li><a href="#">Скидки</a></li>
                 <li><a href="#">Контакты</a></li>
-                <li><a href="#"></a></li>
-                <li><img src="#" width="22px"></li>
-                <li> <img src="#" width="22px"> </li>
-                <li> <img src="#" width="22px"></li>
+
+
+                <div class="menu__footer-img">
+                    <li>
+                        &#9888;</li>
+                    <li>
+                        &#9888;</li>
+                    <li>
+                        &#9888;</li>
+                </div>
+
             </ul>
+
         </nav>
-        <div class="phone_footer">
+        <div class="phone__footer">
             <a href="tel:+7490999999">+7 (490) 99 - 99 - 99<br>Заказать звонок</a>
         </div>
     </footer>
-<!--hello-->
+
 
 
 </body>
