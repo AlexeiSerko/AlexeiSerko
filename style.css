@@ -356,10 +356,13 @@ header {
 .product__info.caunt__choise {
   align-items: flex-end;
 }
-.qwe {
+.product__sort {
   display: flex;
   justify-content: space-between;
+font-size: 14px;
 }
+
+
 
 /* slider */
 .slider {
@@ -402,6 +405,7 @@ header {
 table {
   border-collapse: collapse;
   width: 100%;
+  border-spacing: 7px 10px;
 
 }
 th,td {
@@ -457,3 +461,5 @@ footer {
   background-color: black;
   text-decoration: none;
 }
+
+
