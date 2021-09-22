@@ -5,46 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Айфоносервис| Техника Apple</title>
+    <title>Айфоносервис | Техника Apple</title>
     <meta name="description" content="Интернет магазин техники Apple">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="reset.css"> <!-- Сброс стилей -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <!--<div class="header"></div>-->
-        <div class="header__top">
-            <div>
-                <span>Айфоносервис | Техника Apple</span>
-                <!--<img src="" alt=""-->
-            </div>
-            <div>
-                <input type="text" name="term" placeholder="Поиск по сайту">
-            </div>
-            <div class="header__info">
-                <div class="info__acaunt">
-                    <span>Мой аккаунт</span>
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="header__top wrapper">
+                    <div class="header__top-logo">
+                        <a href="/"><i class="fas fa-mobile-alt"></i> Айфоносервис | <span>Техника Apple</span></a>
+                    </div>
+                    <div class="header__top-search">
+                        <input class="header__top-input" type="text" name='term' placeholder="Поиск по сайту...">
+                    </div>
+                    <div class="header__top-info">
+                        <div class="accaunt">
+                            <i class="fas fa-user"></i><span>Мой аккаунт</span>
+                        </div>
+                        <div class="phone">
+                            <a href="tell: +375299999999">+375 (29) 285-11-22</a>
+                        </div>
+                    </div>
                 </div>
-                <!--info_acaunt-->
-                <div class="info__phone">
-                    <a href="tel:+7490999999">+7(490) 99-99-99</a>
-                </div>
-                <!--info-phone-->
             </div>
-            <!--info-->
-        </div>
-
-        <div class="wrapper">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="page.html">Ремонт</a></li>
-                    <li><a href="#">Скидки</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="header__bottom wrapper">
+                <nav>
+                    <ul class="header__bottom-menu">
+                        <li><a href="#" class="active">Гарантия</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Ремонт</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart">
+                    <div>
+                        <i class="fas fa-cart-plus"></i>
+                        Товаров <span id='count_cart'>0</span>
+                    </div>
+                    <div>(<span id='prise_cart'>0</span> руб.)</div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -52,71 +59,78 @@
         <div class="main__left">
             <aside class="sidebar">
                 <ul class="sidebar__list">
-                    <li> Apple iphone s6</li>
+                    <li class="sidebar__title">Apple iphone s6 </li>
                     <li><a href="#">-16 Gb</a></li>
-                    <li><a href="#">128 Gb</a></li>
-                    <li><a href="#">Apple phone 6s Plus</a></li>
-                    <li><a href="#">Apple iphone 6</a></li>
-                    <li><a href="#">Apple iphone 6 Plus</a></li>
-                    <li><a href="#">Apple iphone 5s</a></li>
-                    <li><a href="#">Apple Watch</a></li>
-                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">-64Gb</a></li>
+                    <li><a href="#">-128 Gb</a></li>
+                    <div class="sidebar__list-bgr">
+                        <li><a href="#">Apple phone 6s Plus</a></li>
+                        <li><a href="#">Apple iphone 6</a></li>
+                        <li><a href="#">Apple iphone 6 Plus</a></li>
+                        <li><a href="#">Apple iphone 5s</a></li>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">Скидки</a></li>
+                    </div>
+
 
                 </ul>
             </aside>
 
             <div class="info active">
                 <div class="info__icon">
-                    &#127777
+                    <i style="color: #fff; width: 18px;" class="fas fa-star"></i>
                 </div>
                 <div class="info__text">
-                    <div class="info__text-title">
+                    <div class="info__text-firstTitle">
                         Гарантия качества
                     </div>
-                    <div class="info__text-description">
+                    <div>
                         Возможность полной проверки товара до оплаты.
                         Гарантия 1 год. Обслуживание в официальном сервис центре Apple.
                     </div>
                 </div>
             </div>
+
+
             <div class="info ">
                 <div class="info__icon">
-                    &#127772
+                    <i style="color: #f53737; width: 18px;" class="fas fa-child"></i>
                 </div>
                 <div class="info__text">
-                    <div class="info__text-title">
+
+                    <div class="info__text-secondTitle">
+                        Отличный сервис
+                    </div>
+                    <div class="info__text-description">
+                        У нас самые профессиональные консультанты по работе с техникой Apple.
+                    </div>
+                </div>
+            </div>
+            <div class="info ">
+                <div class="info__icon">
+                    <i style="color: #ff9320; width: 18px;" class="fas fa-ruble-sign"></i>
+                </div>
+                <div class="info__text">
+                    <div class="info__text-thirdTitle">
                         Привлекательные цены
                     </div>
                     <div class="info__text-description">
-                        Не смотря на все наши преимущества наши цены остаются низкими.
+                        Несмотря на все наши преимущества, наши цены остаются низкими.
                     </div>
                 </div>
             </div>
             <div class="info ">
                 <div class="info__icon">
-                    &#127771
+                    <i style="width: 18px;" class="fas fa-truck"></i>
                 </div>
                 <div class="info__text">
                     <div class="info__text-title">
+
                         Гарантия доставки
                     </div>
                     <div class="info__text-description">
-                        Мы бережно упаковываем и отправляем вам товар, контруллируя
-                        доставку каждого продукта индивидуально.
-                    </div>
-                </div>
-            </div>
-            <div class="info ">
-                <div class="info__icon">
-                    &#127770
-                </div>
-                <div class="info__text">
-                    <div class="info__text-title">
-                        Гарантия качества
-                    </div>
-                    <div class="info__text-description">
-                        Возможность полной проверки товара до оплаты.
-                        Гарантия 1 год. Обслуживание в официальном сервис центре Apple.
+                        Мы бережно упаковвываем и отправляем товар,
+                        контроллируя доставку каждого продукта индивидуально.
                     </div>
                 </div>
             </div>
